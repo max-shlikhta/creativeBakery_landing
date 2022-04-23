@@ -15,7 +15,7 @@
 
     overflow: hidden;
 
-    transform: translate(100%, -100%);
+    transform: translate(25%, -100%);
 
     transition: transform $defDur;
 
@@ -98,26 +98,25 @@
     }
   }
 
-  &__button {
+  &__scrollup {
     position: fixed;
-    z-index: 99;
+    display: none;
 
-    width: 45px;
-    height: 45px;
-
+    width: 40px;
+    height: 40px;
     bottom: 10%;
     right: 5%;
 
-    cursor: pointer;
+    background: url(../images/go_top.svg) no-repeat;
 
     opacity: 0.3;
     transition: opacity 0.6s,
-      animation 0.6s,
-      transform 0.6s;
+    animation 0.6s,
+    transform 0.6s;
     animation: transform 0.7s infinite ease-in;
 
     &:hover {
-      opacity: 0.8;
+      opacity: 0.7;
       animation: paused;
       transform: scale(1.1);
     }
